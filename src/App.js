@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useContext} from 'react';
+import {Provider as SpectrumProvider, defaultTheme} from '@adobe/react-spectrum';
+import {RestfulProvider} from 'restful-react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+import Routing from 'containers/Routing';
+import UserContext from 'contexts/UserContext';
+
+const { REACT_APP_API_URL } = process.env;
+
+const App = () => {
+    const {user: {
+        authenticationToken
+    }} = useContext(UserContext);
+
+    return (
+        <SpectrumProvider
+            locale={'en'}
+            theme={defaultTheme}
+            colorScheme={'light'}
+            minHeight={'100%'}
+            position={'relative'}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+            <RestfulProvider
+                base={REACT_APP_API_URL}
+                requestOptions={{
+                    headers: {
+                        Accept: 'application/json',
+                        ...(authenticationToken && {
+                            Authorization: `${authenticationToken}`
+                        })
+                    }
+                }}
+            >
+              <Routing />
+            </RestfulProvider>
+        </SpectrumProvider>
+    );
 }
 
 export default App;
