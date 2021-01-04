@@ -2,36 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd1cb6ff-841c-40a4-aeaf-0cbd43f8810e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/forms/LogInForm/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/forms/RegisterForm/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Dashboard/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/LogIn/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Register/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Routing/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/contexts/UserContext.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mocks/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/webStorage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ActionsList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Layout/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/forms/GroupForm/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Dashboard/Groups/Group/EditGroup/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Dashboard/Groups/Group/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Dashboard/Groups/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/plagiarism-detector-client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/forms/LogInForm/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/LogInForm/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Dashboard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Dashboard/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="JupyterTrust" id="d2b0a3a3-8ed1-4846-9903-9859d105ba48" />
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="arb3plqd" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -57,19 +60,6 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
