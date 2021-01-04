@@ -6,6 +6,7 @@ import {
     TextField,
     View,
     Well,
+    ProgressCircle
 } from '@adobe/react-spectrum';
 
 const LogInForm = ({onSuccess}) => {

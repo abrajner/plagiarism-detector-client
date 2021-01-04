@@ -1,14 +1,18 @@
-import React from 'react';
-import {Route, Switch, Redirect} from 'react-router-dom';
+import React, {useContext} from 'react';
+import {Link} from '@adobe/react-spectrum';
 
-import Groups from './Groups';
+import UserContext from 'contexts/UserContext';
 
 const Dashboard = () => {
+    const {user, unsetUser} = useContext(UserContext);
+
     return (
-        <Switch>
-            <Route path={'/groups'} component={Groups} />
-            <Route render={() => <Redirect to={'/groups'} />} />
-        </Switch>
+        <>
+            {user.login}:
+            <Link onPress={() => {
+                unsetUser();
+            }}>Log out</Link>
+        </>
     )
 };
 
