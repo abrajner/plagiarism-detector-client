@@ -1,77 +1,30 @@
-import React, {useContext} from 'react';
-import {
-    View,
-    Flex,
-    Heading,
-    ActionButton,
-    Divider,
-    MenuTrigger,
-    Menu,
-    Item,
-    Breadcrumbs
-} from '@adobe/react-spectrum';
-import AutomatedSegment from '@spectrum-icons/workflow/AutomatedSegment';
-import ShowMenu from '@spectrum-icons/workflow/ShowMenu';
+import React from 'react';
+import {View, Flex, Heading} from '@adobe/react-spectrum';
 
-import UserContext from 'contexts/UserContext';
+import Breadcrumbs from 'components/Breadcrumbs';
 
-const Layout = ({children, breadcrumbs}) => {
-    const {user, unsetUser} = useContext(UserContext);
+import Header from './Header';
 
-    const renderBreadcrumbs = () => {
-        const {items, ...props} = breadcrumbs;
-        return (
-            <Breadcrumbs {...props} marginTop={'size-150'} marginX={'size-150'}>
-                {items.map((item) => (
-                    <Item {...item} />
-                ))}
-            </Breadcrumbs>
-        );
-    }
+const Layout = ({
+    heading,
+    breadcrumbs,
+    children
+}) => {
 
     return (
         <View>
             <View>
-                <Flex marginX={'size-250'}>
-                    <Flex
-                        alignItems={'center'}
-                        width={'100%'}
-                        justifyContent={'space-between'}
-                        marginTop={'size-160'}
-                    >
-                        <Flex
-                            alignItems={'center'}
-                            justifyContent={'center'}
-                            gap={'size-200'}
-                        >
-                            <AutomatedSegment size={'L'}/>
-                            <Heading level={1} margin={0}>
-                                Plagiarism Detector
-                            </Heading>
-                        </Flex>
-                        <Flex alignItems={'center'} gap={'size-150'}>
-                            {user.login}
-                            <MenuTrigger>
-                                <ActionButton>
-                                    <ShowMenu/>
-                                </ActionButton>
-                                <Menu
-                                    onAction={(key) => {
-                                        if (key === 'logOut') {
-                                            unsetUser();
-                                        }
-                                    }}
-                                >
-                                    <Item key={'logOut'}>Wyloguj</Item>
-                                </Menu>
-                            </MenuTrigger>
-                        </Flex>
-                    </Flex>
-                </Flex>
-                <Divider size={'S'} marginTop={'size-150'}/>
+                <Header marginBottom={breadcrumbs ? 'size-250' : 'size-500'} />
             </View>
             <Flex direction={'column'} alignItems={'stretch'}>
-                {breadcrumbs ? renderBreadcrumbs() : null}
+                <View marginX={'size-300'}>
+                    {breadcrumbs ? (
+                        <Breadcrumbs {...breadcrumbs} />
+                    ) : null}
+                    {heading ? (
+                        <Heading {...heading} marginTop={'size-100'} marginBottom={0} />
+                    ) : null}
+                </View>
                 <View padding={'size-250'}>
                     <Flex
                         direction={'column'}

@@ -12,7 +12,7 @@
   resolved "https://registry.yarnpkg.com/@adobe/react-spectrum-workflow/-/react-spectrum-workflow-1.0.1.tgz#32537652fb52a6ebf8746ad58268520a04b7f553"
   integrity sha512-5BM+oJyP4vjmqAV/HSJYLJzR3wDDbEOMUZEEVeKJ81cKyq0aJ6qF9A9tmsW6jb/73cE7PpLr6vb+xqBqTOYsTw==
 
-"@adobe/react-spectrum@^3.7.0":
+"@adobe/react-spectrum@^3.6.0", "@adobe/react-spectrum@^3.7.0":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@adobe/react-spectrum/-/react-spectrum-3.7.0.tgz#f62cd8d8b5b2eae5c05efb07a3b5085e94dce4b4"
   integrity sha512-GfFBdgOhuJHNYwrEan3HezOKXq5K9Xwtc6mrPTYEtB6/ZnBChfxCMj2QGTEVsit3rpFkz1mywVZRPmFMe5NYPA==
@@ -1679,6 +1679,21 @@
     "@react-stately/toggle" "^3.2.1"
     "@react-types/switch" "^3.1.1"
 
+"@react-aria/tabs@3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@react-aria/tabs/-/tabs-3.0.0-alpha.2.tgz#3b931d9c752c2dca4c2a1b975248b0ee751077a2"
+  integrity sha512-yHpz1HujxBcMq8e4jrHkkowzrJwuVyssCB+DuA91kt6LC0eIMZsDZY9tEhhOq+TyOhI3nbyXaDKJG6y1qB0A5A==
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/i18n" "^3.2.0"
+    "@react-aria/interactions" "^3.3.2"
+    "@react-aria/selection" "^3.3.1"
+    "@react-aria/utils" "^3.4.1"
+    "@react-stately/list" "^3.2.2"
+    "@react-stately/tabs" "3.0.0-alpha.0"
+    "@react-types/shared" "^3.2.1"
+    "@react-types/tabs" "3.0.0-alpha.2"
+
 "@react-aria/textfield@^3.2.1", "@react-aria/textfield@^3.2.2":
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@react-aria/textfield/-/textfield-3.2.2.tgz#2e8195668464911d4f7a363d19da8786c10afd22"
@@ -2171,7 +2186,32 @@
     "@react-types/switch" "^3.1.1"
     "@spectrum-icons/ui" "^3.2.0"
 
-"@react-spectrum/text@^3.1.1":
+"@react-spectrum/tabs@^3.0.0-alpha.3":
+  version "3.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@react-spectrum/tabs/-/tabs-3.0.0-alpha.3.tgz#fc2c54af62c01f918859e6a4ede7b88ea054dade"
+  integrity sha512-QRLLXReZ0/pSVOF6bXAg2JObouPUerzWQSvMTF5wCf6r7groEc2E8dqOABYIU2jyvD6U0cBWCzf3FFcClEFOCQ==
+  dependencies:
+    "@adobe/react-spectrum" "^3.6.0"
+    "@babel/runtime" "^7.6.2"
+    "@react-aria/focus" "^3.2.2"
+    "@react-aria/i18n" "^3.2.0"
+    "@react-aria/interactions" "^3.3.2"
+    "@react-aria/tabs" "3.0.0-alpha.2"
+    "@react-aria/utils" "^3.4.1"
+    "@react-spectrum/button" "^3.3.0"
+    "@react-spectrum/menu" "^3.2.1"
+    "@react-spectrum/picker" "^3.2.1"
+    "@react-spectrum/text" "^3.1.0"
+    "@react-spectrum/utils" "^3.5.0"
+    "@react-stately/collections" "^3.3.0"
+    "@react-stately/list" "^3.2.2"
+    "@react-stately/tabs" "3.0.0-alpha.0"
+    "@react-types/select" "^3.1.1"
+    "@react-types/shared" "^3.2.1"
+    "@react-types/tabs" "3.0.0-alpha.2"
+    "@spectrum-icons/workflow" "^3.2.0"
+
+"@react-spectrum/text@^3.1.0", "@react-spectrum/text@^3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@react-spectrum/text/-/text-3.1.1.tgz#5bbf00cbdebcaf685d680cf0a10062f6b0f977e0"
   integrity sha512-mJ6q57xCEYEgfjjwqAMqy/KXzaD2YyQgk7a72EV/dTqJcQB9Qmrz37oAC41Z1vnDA7XdMNctKpVnak0lC5uMYg==
@@ -2402,6 +2442,16 @@
     "@react-stately/utils" "^3.1.1"
     "@react-types/slider" "^3.0.0"
 
+"@react-stately/tabs@3.0.0-alpha.0":
+  version "3.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@react-stately/tabs/-/tabs-3.0.0-alpha.0.tgz#41451c7957ab2773fc4edb78ec02fcb94c6ab226"
+  integrity sha512-QJZ9N7DT89RkP18btvQhJvxWuv/JkSwtm14ftfk+5LBbzyxyLsD2KP6jDrNhXgmkRMmIyEaMt2w2VmI6fQ6UAA==
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    "@react-stately/list" "^3.2.2"
+    "@react-stately/utils" "^3.0.0-alpha.1"
+    "@react-types/tabs" "3.0.0-alpha.2"
+
 "@react-stately/toggle@^3.2.1":
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@react-stately/toggle/-/toggle-3.2.1.tgz#8b10b5eb99c3c4df2c36d17a5f23b77773ed7722"
@@ -2433,7 +2483,7 @@
     "@react-stately/utils" "^3.1.1"
     "@react-types/shared" "^3.2.1"
 
-"@react-stately/utils@^3.1.1":
+"@react-stately/utils@^3.0.0-alpha.1", "@react-stately/utils@^3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@react-stately/utils/-/utils-3.1.1.tgz#e2f2c3ef81cfc6850a3418cb0f050c33d123620a"
   integrity sha512-htG4TicI4SKxfD5sEKYGxlMeQ5/+TuWPtnhRMbRqdmqnfkVxO/PoaQeEF+xUMWM9VCZc69ZFH6Qen1eZ/JfFcQ==
@@ -2641,6 +2691,13 @@
   integrity sha512-7bApLg+3xgBEfjv9rUrUL3sjVLVh0M96DLUAEXUK5/zEogJSOOlk82lgafqINNPMjKbdNORegUTiyDIglUPV/Q==
   dependencies:
     "@react-types/shared" "^3.3.0"
+
+"@react-types/tabs@3.0.0-alpha.2":
+  version "3.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@react-types/tabs/-/tabs-3.0.0-alpha.2.tgz#f18c71f4843ae2117b41fdb012f89cc2dd43adf4"
+  integrity sha512-HQNS2plzuNhKPo88OGEW2Ja9aLeiWqgNqEemSxh0KAjkA8IsvDGaoQEpr9ZQIyBZ3PQIljvOpEJ/IwHU5LztrQ==
+  dependencies:
+    "@react-types/shared" "^3.2.1"
 
 "@react-types/text@^3.1.1":
   version "3.1.1"

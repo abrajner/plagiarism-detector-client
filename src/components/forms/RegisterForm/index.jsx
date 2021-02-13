@@ -38,48 +38,57 @@ const RegisterForm = ({onSuccess}) => {
                     onSuccess();
                 }}
             >
-                <TextField name={'login'}
-                           value={login}
-                           onChange={setLogin}
-                           label={'Login*'}
-                           placeHolder={'Enter your login'}
+                <TextField
+                    name={'login'}
+                    value={login}
+                    onChange={setLogin}
+                    label={'Login*'}
+                    placeHolder={'Enter your login'}
                 />
-                <TextField name={'email'}
-                           value={email}
-                           onChange={setEmail}
-                           label={'Email*'}
-                           placeHolder={'Enter your email'}
+                <TextField
+                    name={'email'}
+                    value={email}
+                    onChange={setEmail}
+                    label={'Email*'}
+                    placeHolder={'Enter your email'}
                 />
-                <TextField name={'password'}
-                           value={password}
-                           onChange={setPassword}
-                           label={'Password*'}
-                           placeHolder={'Enter your password'}
+                <TextField
+                    name={'password'}
+                    value={password}
+                    onChange={setPassword}
+                    label={'Password*'}
+                    placeHolder={'Enter your password'}
+                    type={'password'}
                 />
-                <TextField name={'repeatedPassword'}
-                           value={repeatedPassword}
-                           onChange={setRepeatedPassword}
-                           label={'Confirm Password*'}
-                           placeHolder={'Confirm your password'}
+                <TextField
+                    name={'repeatedPassword'}
+                    value={repeatedPassword}
+                    onChange={setRepeatedPassword}
+                    label={'Confirm Password*'}
+                    placeHolder={'Confirm your password'}
+                    type={'password'}
                 />
-                <TextField name={'firstName'}
-                           value={firstName}
-                           onChange={setFirstName}
-                           label={'First Name'}
-                           placeHolder={'Enter your first name'}
+                <TextField
+                    name={'firstName'}
+                    value={firstName}
+                    onChange={setFirstName}
+                    label={'First Name'}
+                    placeHolder={'Enter your first name'}
                 />
-                <TextField name={'lastName'}
-                           value={lastName}
-                           onChange={setLastName}
-                           label={'Last Name'}
-                           placeHolder={'Enter your last name'}
+                <TextField
+                    name={'lastName'}
+                    value={lastName}
+                    onChange={setLastName}
+                    label={'Last Name'}
+                    placeHolder={'Enter your last name'}
                 />
                 <View marginTop={'size-200'}>
                     <Button
                         variant={'cta'}
                         type={'submit'}
+                        isDisabled={postUsersLoading}
                     >
-                        Register
+                        {postUsersLoading ? 'Processing...' : 'Register'}
                     </Button>
                 </View>
             </Form>

@@ -9,15 +9,16 @@ const { REACT_APP_API_URL } = process.env;
 
 const App = () => {
     const {user: {
-        authenticationToken
+        authenticationToken,
+        colorScheme
     }} = useContext(UserContext);
 
     return (
         <SpectrumProvider
             locale={'en'}
             theme={defaultTheme}
-            colorScheme={'light'}
-            minHeight={'100%'}
+            colorScheme={colorScheme}
+            height={'100%'}
             position={'relative'}
         >
             <RestfulProvider

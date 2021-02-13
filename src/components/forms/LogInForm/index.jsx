@@ -53,8 +53,9 @@ const LogInForm = ({onSuccess}) => {
                     <Button
                         variant={'cta'}
                         type={'submit'}
+                        isDisabled={postAuthenticationTokenLoading}
                     >
-                        Log in
+                        {postAuthenticationTokenLoading ? 'Processing...' : 'Log In'}
                     </Button>
                 </View>
             </Form>

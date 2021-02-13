@@ -7,10 +7,11 @@ import {
     View,
     Well,
     Picker,
-    Item
+    Item,
+    ButtonGroup
 } from '@adobe/react-spectrum';
 
-const GroupForm = ({variant, initialValues, onSuccess}) => {
+const GroupForm = ({variant, initialValues, onSuccess, onCancel}) => {
     const [name, setName] = useState(initialValues?.groupName || '');
     const [
         programmingLanguage,
@@ -31,8 +32,8 @@ const GroupForm = ({variant, initialValues, onSuccess}) => {
         loading: putGroupsLoading,
         error: putGroupsError
     } = useMutate({
-        path: '/groups',
-        verb: 'POST'
+        path: ({groupId}) => `/group/${groupId}`,
+        verb: 'PUT'
     });
 
     const error = variant === 'create' ?
@@ -55,6 +56,10 @@ const GroupForm = ({variant, initialValues, onSuccess}) => {
                     } else if (variant === 'edit') {
                         await putGroups({
                             groupName: name, programmingLanguage
+                        }, {
+                            pathParams: {
+                                groupId: initialValues.groupId
+                            }
                         });
                     }
                     onSuccess();
@@ -64,29 +69,42 @@ const GroupForm = ({variant, initialValues, onSuccess}) => {
                     name={'name'}
                     value={name}
                     onChange={setName}
-                    label={'Group name'}
+                    label={'Group Name*'}
                     placeholder={'Enter new group name'}
                 />
                 <Picker
-                    label={'Programming language'}
+                    label={'Programming Language*'}
                     defaultSelectedKey={initialValues?.programmingLanguage || 'java'}
                     onSelectionChange={(key) => {
                         setProgrammingLanguage(key);
                     }}
                 >
-                    <Item key={'java'}>Java</Item>
-                    <Item key={'python'}>Python</Item>
-                    <Item key={'other'}>Other</Item>
+                    <Item key={'JAVA'}>Java</Item>
+                    <Item key={'PYTHON'}>Python</Item>
+                    <Item key={'CPP'}>C++</Item>
+                    <Item key={'C'}>C</Item>
+                    <Item key={'JAVASCRIPT'}>JavaScript</Item>
+                    <Item key={'CSHARP'}>C#</Item>
+                    <Item key={'PHP'}>PHP</Item>
+                    <Item key={'OTHER'}>Other</Item>
                 </Picker>
-                <View marginTop={'size-200'}>
+                <ButtonGroup marginTop={'size-250'}>
                     <Button
                         variant={'cta'}
                         type={'submit'}
-                        isDisabled={postGroupsLoading}
+                        isDisabled={(!name || !programmingLanguage) || postGroupsLoading}
                     >
-                        {loading ? 'Processing' : variant === 'create' ? 'Create group' : 'Edit group'}
+                        {loading ? 'Processing...' : 'Save'}
                     </Button>
-                </View>
+                    <Button
+                        variant={'secondary'}
+                        onPress={() => {
+                            onCancel();
+                        }}
+                    >
+                        Cancel
+                    </Button>
+                </ButtonGroup>
             </Form>
         </>
     );

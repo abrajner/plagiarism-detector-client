@@ -5,5 +5,6 @@ export const initialUser = {
     lastName: '',
     email: '',
     active: false,
-    authenticationToken: ''
+    authenticationToken: '',
+    colorScheme: 'light'
 };
