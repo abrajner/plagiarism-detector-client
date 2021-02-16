@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="dd1cb6ff-841c-40a4-aeaf-0cbd43f8810e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ActionsList/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/forms/GroupForm/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Dashboard/Groups/Group/EditGroup/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Dashboard/Groups/Group/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Dashboard/Groups/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/plagiarism-detector-client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/LogInForm/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/LogInForm/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Dashboard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Dashboard/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/date.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <list id="f4494910-b506-44e6-b957-d1621dd94393" name="patch" comment="" />
+    <list id="f7445f41-923d-41dc-971c-4bc57c8c1eb1" name="unnamed" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +25,24 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="JupyterTrust" id="d2b0a3a3-8ed1-4846-9903-9859d105ba48" />
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="5" changelist="f7445f41-923d-41dc-971c-4bc57c8c1eb1" />
+        <range start1="3" end1="20" start2="6" end2="10" changelist="f7445f41-923d-41dc-971c-4bc57c8c1eb1" />
+        <range start1="53" end1="53" start2="43" end2="44" changelist="f7445f41-923d-41dc-971c-4bc57c8c1eb1" />
+        <range start1="63" end1="63" start2="54" end2="67" changelist="dd1cb6ff-841c-40a4-aeaf-0cbd43f8810e" />
+        <range start1="67" end1="67" start2="71" end2="73" changelist="f7445f41-923d-41dc-971c-4bc57c8c1eb1" />
+        <range start1="73" end1="73" start2="79" end2="91" changelist="f7445f41-923d-41dc-971c-4bc57c8c1eb1" />
+        <range start1="74" end1="74" start2="92" end2="107" changelist="f7445f41-923d-41dc-971c-4bc57c8c1eb1" />
+        <range start1="79" end1="79" start2="112" end2="118" changelist="f7445f41-923d-41dc-971c-4bc57c8c1eb1" />
+        <range start1="80" end1="81" start2="119" end2="132" changelist="f7445f41-923d-41dc-971c-4bc57c8c1eb1" />
+        <range start1="83" end1="84" start2="134" end2="147" changelist="f7445f41-923d-41dc-971c-4bc57c8c1eb1" />
+        <range start1="88" end1="89" start2="151" end2="156" changelist="f7445f41-923d-41dc-971c-4bc57c8c1eb1" />
+        <range start1="91" end1="92" start2="158" end2="159" changelist="f7445f41-923d-41dc-971c-4bc57c8c1eb1" />
+      </ranges>
+    </file>
+  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="arb3plqd" />
   </component>
@@ -51,6 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/study/inżynierka/patch.patch" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -61,34 +73,110 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="dd1cb6ff-841c-40a4-aeaf-0cbd43f8810e" name="Default Changelist" comment="" />
+      <changelist id="f7445f41-923d-41dc-971c-4bc57c8c1eb1" name="unnamed" comment="" />
+      <changelist id="f4494910-b506-44e6-b957-d1621dd94393" name="patch" comment="" />
       <created>1604854071461</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604854071461</updated>
       <workItem from="1604854072520" duration="1346000" />
       <workItem from="1609687832666" duration="17653000" />
+      <workItem from="1609792064036" duration="606000" />
+      <workItem from="1610227048130" duration="630000" />
+      <workItem from="1613213850961" duration="2769000" />
+      <workItem from="1613240380303" duration="2149000" />
+      <workItem from="1613503688111" duration="1365000" />
     </task>
+    <task id="LOCAL-00001" summary="group views">
+      <created>1609792208449</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609792208449</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactor, files upload and report view">
+      <created>1613214026359</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613214026359</updated>
+    </task>
+    <task id="LOCAL-00003" summary="reports refactor">
+      <created>1613505936861</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613505936861</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="group views" />
+    <MESSAGE value="refactor, files upload and report view" />
+    <MESSAGE value="reports refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="reports refactor" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="249" y="0" key="#Project_Structure" timestamp="1604854082030">
+    <state x="296" y="0" key="CommitChangelistDialog2" timestamp="1613505935934">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1604854082030" />
+    <state x="296" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1613505935934" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1613506102659">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1613506102659" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1613505869703">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1613505869703" />
+    <state x="147" y="65" key="MergeDialog" timestamp="1613505854088">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="65" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1613505854088" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1613505979572">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1613505979572" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1613213852801">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1613213852801" />
+    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1613503690697">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1613503690697" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1609702388689">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1609702388689" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1609703737975">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610227060120">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1609703737975" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1610227060120" />
+    <state x="420" y="114" key="vcs.ApplyPatchDifferentiatedDialog" timestamp="1613505875953">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="420" y="114" key="vcs.ApplyPatchDifferentiatedDialog/0.0.1536.824@0.0.1536.824" timestamp="1613505875953" />
   </component>
 </project>
