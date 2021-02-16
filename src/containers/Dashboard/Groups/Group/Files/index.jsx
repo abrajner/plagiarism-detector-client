@@ -63,7 +63,7 @@ const Files = () => {
 
     const handlePostAnalyze = async () => {
         await postAnalyse({
-            reportName: new Date().toTimeString(),
+            reportName: new Date().getTime(),
             fileIds: selectedFiles
         });
         history.push(`/groups/${groupId}/reports`);

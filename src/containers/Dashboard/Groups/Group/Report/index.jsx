@@ -9,7 +9,9 @@ import {
     Text
 } from '@adobe/react-spectrum';
 import FileCode from '@spectrum-icons/workflow/FileCode';
+import dayjs from 'dayjs';
 
+import { FORMAT } from 'constants/date';
 import Layout from 'components/Layout';
 
 const Report = () => {
@@ -19,13 +21,11 @@ const Report = () => {
 
     const report = history.location.state;
 
-    console.log('report', report);
-
     return (
         <Layout
             heading={{
                 level: 2,
-                children: reportId
+                children: dayjs(parseInt(reportId)).format(FORMAT)
             }}
         >
             <View>

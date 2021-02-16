@@ -16,7 +16,7 @@ import {
 } from '@adobe/react-spectrum';
 import FolderAdd from '@spectrum-icons/workflow/FolderAdd';
 import Edit from '@spectrum-icons/workflow/Edit';
-import ArrowRight from '@spectrum-icons/workflow/ArrowRight';
+import OpenIn from '@spectrum-icons/workflow/OpenIn';
 import NotFound from '@spectrum-icons/illustrations/NotFound';
 
 import GroupForm from 'components/forms/GroupForm';
@@ -119,17 +119,17 @@ const Groups = () => {
                             rows={groups}
                             actions={[
                                 {
+                                    text: 'Open',
+                                    icon: OpenIn,
+                                    onPress: (row) => {
+                                        history.push(`/groups/${row.groupId}/files`);
+                                    }
+                                },
+                                {
                                     text: 'Edit',
                                     icon: Edit,
                                     onPress: ({groupId}) => {
                                         setEditGroupId(groupId);
-                                    }
-                                },
-                                {
-                                    text: 'Open',
-                                    icon: ArrowRight,
-                                    onPress: (row) => {
-                                        history.push(`/groups/${row.groupId}/files`);
                                     }
                                 }
                             ]}

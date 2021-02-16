@@ -17,6 +17,8 @@ import Light from '@spectrum-icons/workflow/Light';
 import UserContext from 'contexts/UserContext';
 
 const Header = ({children, ...rest}) => {
+
+
     const {
         user: {
             login,

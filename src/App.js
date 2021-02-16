@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {Provider as SpectrumProvider, defaultTheme} from '@adobe/react-spectrum';
+import {Provider as SpectrumProvider, defaultTheme, useDateFormatter} from '@adobe/react-spectrum';
 import {RestfulProvider} from 'restful-react';
 
 import Routing from 'containers/Routing';

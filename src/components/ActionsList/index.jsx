@@ -5,11 +5,12 @@ import {
     View,
     Divider,
     Text,
-    Checkbox
+    Checkbox,
+    useCollator
 } from '@adobe/react-spectrum';
 import compact from 'lodash/compact';
 
-const resolveRows = (rows, displayedColumns) =>
+const resolveColumns = (rows, displayedColumns) =>
     compact(
         Object.keys(rows[0]).map(
             (key) =>
@@ -27,7 +28,7 @@ const ActionsList = ({
     hasCheckboxes,
     onCheckboxChange
 }) => {
-    const columns = resolveRows(rows, displayedColumns);
+    const columns = resolveColumns(rows, displayedColumns);
     const columnsCount = actions ? columns.length + 1 : columns.length;
     const rowsCount = rows.length;
 
@@ -53,26 +54,26 @@ const ActionsList = ({
             ) : null}
             {columns.map((column, outerIndex) => (
                 <Flex direction={'column'} key={outerIndex}>
-                    {column.map((value, innerIndex) => {
-                        return (
-                            <View key={innerIndex}>
-                                <Flex
-                                    height={'size-700'}
-                                    alignItems={'center'}
-                                    marginStart={'size-300'}
-                                    marginEnd={
-                                        outerIndex === columnsCount - 1 ?
-                                            'size-300' : undefined
-                                    }
-                                >
-                                    {resolvers?.[column] ? resolvers[column](value) : value}
-                                </Flex>
-                                {innerIndex !== rows.length - 1 ? (
-                                    <Divider size={'S'}/>
-                                ) : null}
-                            </View>
-                        );
-                    })}
+                    {column.map((value, innerIndex) => (
+                        <View key={innerIndex}>
+                            <Flex
+                                height={'size-700'}
+                                alignItems={'center'}
+                                marginStart={'size-300'}
+                                marginEnd={
+                                    outerIndex === columnsCount - 1 ?
+                                        'size-300' : undefined
+                                }
+                            >
+                                {resolvers?.[displayedColumns[outerIndex]]
+                                    ? resolvers[displayedColumns[outerIndex]](value)
+                                    : value}
+                            </Flex>
+                            {innerIndex !== rows.length - 1 ? (
+                                <Divider size={'S'}/>
+                            ) : null}
+                        </View>
+                    ))}
                 </Flex>
             ))}
             {actions ? (

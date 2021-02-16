@@ -5,13 +5,17 @@ import {
     View,
     Content,
     Heading,
-    IllustratedMessage
+    IllustratedMessage,
+    StatusLight,
+    Flex,
 } from '@adobe/react-spectrum';
 import NotFound from '@spectrum-icons/illustrations/NotFound';
-import ArrowRight from '@spectrum-icons/workflow/ArrowRight';
+import OpenIn from '@spectrum-icons/workflow/OpenIn';
+import dayjs from 'dayjs';
 
 import ActionsList from 'components/ActionsList';
 import Loader from 'components/Loader';
+import { FORMAT } from 'constants/date';
 
 const Reports = () => {
     const {id: groupId} = useParams();
@@ -27,8 +31,6 @@ const Reports = () => {
         }
     });
 
-    console.log('a', reports);
-
     return (
         <View>
             {getReportsLoading ? (
@@ -43,7 +45,7 @@ const Reports = () => {
                         actions={[
                             {
                                 text: 'Open',
-                                icon: ArrowRight,
+                                icon: OpenIn,
                                 onPress: (row) => {
                                     history.push({
                                         pathname: `/groups/${groupId}/reports/${row.reportName}`,
@@ -53,7 +55,15 @@ const Reports = () => {
                             }
                         ]}
                         resolvers={{
-                            finished: () => 'chuj'
+                            reportName: (reportName) => dayjs(parseInt(reportName)).format(FORMAT),
+                            finished: (finished) => (
+                                <Flex
+                                    alignItems={'center'}
+                                >
+                                    <StatusLight variant={finished ? 'positive' : 'negative'} />
+                                    {finished ? 'Finished' : 'In progress'}
+                                </Flex>
+                            )
                         }}
                     />
                 </View>
