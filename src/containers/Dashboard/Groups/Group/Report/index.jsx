@@ -58,11 +58,6 @@ const Report = () => {
                                 <StatusLight variant={reportForFile.plagiarism ? 'negative' : 'positive'}>
                                     Similarity: {reportForFile.codeSimilarityPercentage}%
                                 </StatusLight>
-                                {reportForFile.substitutionIncluded ? (
-                                    <StatusLight variant={reportForFile.plagiarism ? 'negative' : 'positive'}>
-                                        Similarity (with substitution): {reportForFile.codeSimilarityPercentageWithSubstitution}%
-                                    </StatusLight>
-                                ) : null}
                             </Flex>
                         </Flex>
                         <Divider size={'S'} />

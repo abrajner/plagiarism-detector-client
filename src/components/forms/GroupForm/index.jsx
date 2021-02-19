@@ -84,8 +84,6 @@ const GroupForm = ({variant, initialValues, onSuccess, onCancel}) => {
                     <Item key={'CPP'}>C++</Item>
                     <Item key={'C'}>C</Item>
                     <Item key={'JAVASCRIPT'}>JavaScript</Item>
-                    <Item key={'CSHARP'}>C#</Item>
-                    <Item key={'PHP'}>PHP</Item>
                     <Item key={'OTHER'}>Other</Item>
                 </Picker>
                 <ButtonGroup marginTop={'size-250'}>
